@@ -14,7 +14,8 @@
     "socket.io": "^2.1.1",
     "socket.io-adapter": "~1.1.0",
     "socket.io-client": "2.1.1",
-    "socket.io-parser": "~3.2.0"
+    "socket.io-parser": "~3.2.0",
+    "supervisor": "^0.12.0"
   },
   "devDependencies": {
     "expect.js": "0.3.1",
@@ -24,6 +25,7 @@
     "supertest": "^3.0.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "supervisor index.js",
+    "dev": "node index.js"
   }
 }

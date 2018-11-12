@@ -28,7 +28,7 @@ $(function() {
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
-      message += "只有一个用户";
+      message += "只有1个用户";
     } else {
       message += "一共有 " + data.numUsers + " 个用户";
     }
@@ -207,6 +207,7 @@ $(function() {
     }
   });
 
+  
   $inputMessage.on('input', () => {
     updateTyping();
   });

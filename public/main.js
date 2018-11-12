@@ -102,7 +102,7 @@ $(function() {
   // Adds the visual chat typing message
   const addChatTyping = (data) => {
     data.typing = true;
-    data.message = 'is typing';
+    data.message = '正在输入...';
     addChatMessage(data);
   }
 
@@ -141,7 +141,7 @@ $(function() {
     } else {
       $messages.append($el);
     }
-    $messages[0].scrollTop = $messages[0].scrollHeight;
+    $messages[0].scrollIntoView(false) 
   }
 
   // Prevents input from having injected markup
@@ -207,7 +207,7 @@ $(function() {
     }
   });
 
-  
+
   $inputMessage.on('input', () => {
     updateTyping();
   });

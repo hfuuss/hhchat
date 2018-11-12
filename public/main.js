@@ -28,7 +28,7 @@ $(function() {
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
-      message += "只有一个用户哦";
+      message += "只有一个用户";
     } else {
       message += "一共有 " + data.numUsers + " 个用户";
     }
@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', (data) => {
     connected = true;
     // Display the welcome message
-    var message = "欢迎加入花花 聊天室V1.0 – by 九月";
+    var message = "欢迎加入雪花❄️聊天室 聊天室V1.0 – by 九月";
     log(message, {
       prepend: true
     });
